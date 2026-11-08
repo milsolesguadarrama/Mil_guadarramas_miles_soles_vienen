@@ -2,13 +2,13 @@
   color-scheme: light;
   --ink: #2c2c2c;
   --muted: #504747;
-  --paper: #d86543;
+  --paper: #ffa626;
   --white: #ffe8d0;
-  --pink: #fab7f4;
-  --blue: #a8d5e2;
-  --yellow: #ffd966;
-  --lime: #cbff96;
-  --line: rgba(44, 44, 44, .35);
+  --pink: #ff00ff;
+  --blue: #2680ff;
+  --plum: #701267;
+  --ochre: #6d3500;
+  --line: color-mix(in srgb, var(--ochre) 35%, transparent);
   --display: "Space Grotesk", sans-serif;
   --sans: "DM Sans", sans-serif;
 }
@@ -165,7 +165,7 @@ a { color: inherit; }
   text-transform: uppercase;
 }
 
-h1 em, h2 em, .closing-note em { color: var(--pink); font-weight: 700; }
+h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
 
 .hero__intro {
   max-width: 390px;
@@ -223,7 +223,7 @@ h1 em, h2 em, .closing-note em { color: var(--pink); font-weight: 700; }
   text-transform: uppercase;
 }
 
-.intro h2 em, .about-story h2 em, .values h2 em { color: #d86543; }
+.intro h2 em, .about-story h2 em, .values h2 em { color: var(--plum); }
 
 .intro__copy p, .about-story__copy > p:not(.eyebrow) {
   margin: 0 0 22px;
@@ -249,7 +249,7 @@ h1 em, h2 em, .closing-note em { color: var(--pink); font-weight: 700; }
   text-transform: uppercase;
 }
 
-.quote-band__mark { color: var(--muted); font-size: 52px; }
+.quote-band__mark { color: var(--plum); font-size: 52px; }
 
 .site-footer {
   display: flex;
@@ -258,15 +258,15 @@ h1 em, h2 em, .closing-note em { color: var(--pink); font-weight: 700; }
   justify-content: space-between;
   gap: 28px;
   padding: 26px 6%;
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--plum);
+  color: var(--white);
 }
 
-.about-page + .site-footer { border-top: 1px solid var(--line); background: var(--pink); }
+.about-page + .site-footer { border-top: 1px solid var(--line); background: var(--plum); }
 
 .wordmark--footer { font-size: 13px; }
-.site-footer p { margin: 0; color: var(--muted); font-size: 13px; }
-.footer-link { display: inline-flex; gap: 8px; color: var(--ink); font-family: var(--display); font-size: 14px; font-weight: 700; text-decoration: none; text-transform: uppercase; }
+.site-footer p { margin: 0; color: rgba(255, 232, 208, .78); font-size: 13px; }
+.footer-link { display: inline-flex; gap: 8px; color: var(--white); font-family: var(--display); font-size: 14px; font-weight: 700; text-decoration: none; text-transform: uppercase; }
 
 .about-page { padding-top: 1px; background: var(--pink); }
 
@@ -276,7 +276,7 @@ h1 em, h2 em, .closing-note em { color: var(--pink); font-weight: 700; }
 }
 
 .about-heading h1 { font-size: 68px; color: var(--ink); }
-.about-heading h1 em { color: #d86543; }
+.about-heading h1 em { color: var(--plum); }
 .about-heading__lead { max-width: 500px; margin: 19px 0 0; color: var(--muted); font-size: 17px; }
 
 .about-story {
@@ -303,10 +303,10 @@ h1 em, h2 em, .closing-note em { color: var(--pink); font-weight: 700; }
 .values h2 { font-size: 50px; }
 .value-row { display: grid; grid-template-columns: 40px 1fr 26px; gap: 16px; padding: 23px 0; border-top: 1px solid var(--line); }
 .value-row:last-child { border-bottom: 1px solid var(--line); }
-.value-row__number { padding-top: 3px; color: #d86543; font-size: 11px; font-weight: 700; }
+.value-row__number { padding-top: 3px; color: var(--plum); font-size: 11px; font-weight: 700; }
 .value-row h3 { margin: 0 0 4px; font-family: var(--display); font-size: 23px; font-weight: 700; text-transform: uppercase; }
 .value-row p { max-width: 370px; margin: 0; color: var(--muted); font-size: 14px; }
-.value-row__symbol { color: #d86543; text-align: right; }
+.value-row__symbol { color: var(--plum); text-align: right; }
 
 .closing-note {
   display: flex;
@@ -314,11 +314,11 @@ h1 em, h2 em, .closing-note em { color: var(--pink); font-weight: 700; }
   align-items: center;
   justify-content: space-between;
   padding: 60px 8%;
-  background: #d86543;
+  background: var(--plum);
   color: var(--white);
 }
 
-.closing-note em { color: var(--lime); }
+.closing-note em { color: var(--paper); }
 
 @keyframes image-arrive { from { transform: scale(1.035); } to { transform: scale(1); } }
 @keyframes content-arrive { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
