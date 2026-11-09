@@ -253,7 +253,7 @@ h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
   text-transform: uppercase;
 }
 
-.quote-band__mark { color: var(--plum); font-size: 52px; }
+.quote-band__image { flex-shrink: 0; width: 170px; height: auto; margin-left: 24px; }
 
 .site-footer {
   display: flex;
@@ -346,7 +346,7 @@ h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
   .intro h2, .about-story h2, .values h2 { font-size: 43px; }
   .quote-band { min-height: 190px; padding: 40px 7%; }
   .quote-band p, .closing-note > p { font-size: 32px; }
-  .quote-band__mark { font-size: 38px; }
+  .quote-band__image { width: 110px; }
   .site-footer { min-height: 145px; flex-wrap: wrap; gap: 14px 20px; padding: 24px 6%; }
   .site-footer p { order: 3; width: 100%; }
   .about-heading { padding-top: 76px; padding-bottom: 52px; }
