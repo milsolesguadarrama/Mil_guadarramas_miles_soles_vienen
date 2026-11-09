@@ -272,6 +272,8 @@ h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
 .wordmark--footer .wordmark__logo { width: 256px; height: 184px; }
 .site-footer p { margin: 0; color: rgba(255, 232, 208, .78); font-size: 13px; }
 .footer-link { display: inline-flex; gap: 8px; color: var(--white); font-family: var(--sans); font-size: 14px; font-weight: 700; text-decoration: none; text-transform: uppercase; }
+.site-footer__info { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin-right: auto; }
+.site-footer__eu { flex-shrink: 0; width: 260px; height: auto; padding: 10px 14px; background: #fff; border-radius: 4px; }
 
 .about-page { padding-top: 1px; background: var(--pink); }
 
@@ -348,7 +350,8 @@ h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
   .quote-band p, .closing-note > p { font-size: 32px; }
   .quote-band__image { width: 110px; }
   .site-footer { min-height: 145px; flex-wrap: wrap; gap: 14px 20px; padding: 24px 6%; }
-  .site-footer p { order: 3; width: 100%; }
+  .site-footer__info { order: 3; width: 100%; }
+  .site-footer__eu { order: 4; width: 200px; }
   .about-heading { padding-top: 76px; padding-bottom: 52px; }
   .about-heading h1 { font-size: 53px; }
   .about-heading__lead { font-size: 15px; }
