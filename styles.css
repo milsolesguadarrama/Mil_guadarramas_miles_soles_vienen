@@ -227,6 +227,8 @@ h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
 
 .intro h2 em, .about-story h2 em, .values h2 em { color: var(--plum); }
 
+.intro__image { display: block; width: 100%; max-width: 340px; height: auto; }
+
 .intro__copy p, .about-story__copy > p:not(.eyebrow) {
   margin: 0 0 22px;
   color: var(--muted);
