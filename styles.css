@@ -45,10 +45,10 @@ a { color: inherit; }
   position: relative;
   z-index: 2;
   display: flex;
-  min-height: 112px;
+  min-height: 72px;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 6%;
+  padding: 8px 6% 4px;
   background: var(--paper);
 }
 
@@ -113,7 +113,7 @@ a { color: inherit; }
   grid-template-columns: .9fr 1.1fr;
   gap: 5%;
   align-items: center;
-  padding: 28px 6% 52px;
+  padding: 0 6% 28px;
   background: var(--paper);
   color: var(--ink);
 }
@@ -127,7 +127,8 @@ a { color: inherit; }
   min-height: 500px;
   object-fit: cover;
   object-position: center;
-  transform: translateX(22px);
+  transform: scale(2) translateX(56px);
+  transform-origin: center left;
   filter: none;
   animation: image-arrive 1.2s ease-out both;
 }
@@ -272,8 +273,8 @@ h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
 .about-page { padding-top: 1px; background: var(--pink); }
 
 .about-heading {
-  padding-top: 76px;
-  padding-bottom: 62px;
+  padding-top: 36px;
+  padding-bottom: 52px;
 }
 
 .about-heading h1 { font-size: 68px; color: var(--ink); }
@@ -325,7 +326,7 @@ h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
 @keyframes content-arrive { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 760px) {
-  .site-header { min-height: 76px; padding: 0 6%; }
+  .site-header { min-height: 60px; padding: 8px 6% 0; }
   .wordmark { gap: 8px; font-size: 11px; }
   .wordmark__logo { width: 256px; height: 192px; }
   .site-nav { gap: 17px; }
