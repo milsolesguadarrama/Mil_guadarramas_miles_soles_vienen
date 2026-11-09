@@ -206,7 +206,8 @@ h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
 
 .section-wrap { padding-right: 8%; padding-left: 8%; }
 
-.intro { padding-top: 88px; padding-bottom: 94px; background: var(--pink); }
+.intro { padding-top: 88px; padding-bottom: 94px; background: var(--plum); color: var(--white); }
+.intro .eyebrow, .intro .intro__copy p, .intro .text-link { color: var(--white); }
 
 .intro__grid {
   display: grid;
@@ -241,8 +242,8 @@ h1 em, h2 em, .closing-note em { color: var(--plum); font-weight: 700; }
   align-items: center;
   justify-content: space-between;
   padding: 50px 8%;
-  background: var(--plum);
-  color: var(--white);
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .quote-band p, .closing-note > p {
